@@ -1,0 +1,15 @@
+[ignore]
+.*/node_modules/.*
+.*/src/serviceWorker.js
+.*/src/index\.js
+#.*/.test\.js -> to not check the test if is need it
+
+[include]
+./src/*
+[libs]
+
+[lints]
+
+[options]
+all=true
+[strict]

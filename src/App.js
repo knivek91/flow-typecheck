@@ -1,26 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// @flow
+import React from "react";
 
-function App() {
+import {
+  ShowResult,
+  ComponentWithPropsAndState,
+  HooksPropsState
+} from "./components";
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <ShowResult result={2} />
+      <ComponentWithPropsAndState
+        initialValue={parseInt(Math.random() * 10, 10)}
+      />
+      <HooksPropsState initialValue={parseInt(Math.random() * 10, 10)} />
     </div>
   );
-}
+};
 
 export default App;
