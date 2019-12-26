@@ -42,11 +42,9 @@
     }
   },
   "lint-staged": {
-    "linters": {
-      "*.{js,jsx,css,json}": [
-        "prettier --write",
-        "git add"
-      ]
-    }
+    "*.{js,jsx}": [
+      "prettier --write",
+      "git add"
+    ]
   }
 }
